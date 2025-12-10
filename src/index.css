@@ -1,0 +1,49 @@
+:root {
+  /* PALETA NUEVA */
+  --color-bg-light-green: #d9f5d3;   /* Verde claro para el fondo */
+  --color-orange: #ff8c42;           /* Naranja principal para tarjetas y botones */
+  --color-orange-dark: #e6762f;      /* Naranja más oscuro para hover */
+  --color-text-main: #2e2e2e;        /* Texto oscuro para mejor contraste */
+  --color-text-light: #ffffff;       /* Blanco para textos sobre naranja */
+
+  font-family: 'Orbitron', system-ui, sans-serif;
+
+  background-color: var(--color-bg-light-green);
+  color: var(--color-text-main);
+}
+
+/* BOTONES, INPUTS, TEXTAREAS */
+button, input, textarea {
+  border: none;
+  border-radius: 6px;
+  padding: 0.75em 1em;
+
+  background-color: var(--color-orange);
+  color: var(--color-text-light);
+
+  transition: background-color .2s ease, transform .1s ease;
+}
+
+/* EFECTO HOVER */
+button:hover,
+input:hover,
+textarea:hover {
+  background-color: var(--color-orange-dark);
+  transform: scale(1.02);
+}
+
+/* EFECTO FOCUS PARA INPUTS */
+input:focus, textarea:focus {
+  outline: 2px solid var(--color-orange-dark);
+}
+
+/* ESTILO GENERAL DE TARJETAS O CONTAINERS */
+.card,
+.panel,
+.container-box {
+  background-color: var(--color-orange);
+  color: var(--color-text-light);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
