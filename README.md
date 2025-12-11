@@ -1,5 +1,4 @@
 # despliegue-todo-davidbaquero
-# despliegue-todo-davidbaquero
 Este proyecto corresponde a una aplicación Full Stack orientada a la administración de tareas. Permite crear, visualizar, actualizar, marcar como finalizadas y eliminar tareas según sea necesario.
 El backend está desarrollado con Node.js y Express, utilizando PostgreSQL como base de datos alojada en Railway.
 
