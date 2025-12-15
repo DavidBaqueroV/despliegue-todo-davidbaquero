@@ -1,71 +1,103 @@
-# despliegue-todo-davidbaquero
-Este proyecto corresponde a una aplicación Full Stack orientada a la administración de tareas. Permite crear, visualizar, actualizar, marcar como finalizadas y eliminar tareas según sea necesario.
-El backend está desarrollado con Node.js y Express, utilizando PostgreSQL como base de datos alojada en Railway.
+📌 Descripción del Proyecto
 
-Tecnologías
+Este repositorio contiene el Frontend de una aplicación de administración de tareas (TODO).
+La aplicación está desarrollada como una Single Page Application (SPA) utilizando React con Vite, y está preparada para ser desplegada en Netlify.
 
-Backend: Node.js, Express, CORS, Dotenv, PostgreSQL
-Base de Datos: PostgreSQL (Railway)
-Frontend (en desarrollo): HTML, CSS, JavaScript o React
-Control de Versiones: Git
-Despliegue: Railway
+El frontend se encarga de la interfaz gráfica y de la interacción del usuario con el sistema.
 
-Variables de Entorno (Railway / .env.local)
+🧰 Tecnologías Utilizadas
 
-Para ejecutar el proyecto correctamente se deben definir las siguientes variables:
+React
 
-DB_HOST=tramway.proxy.rlwy.net
-DB_USER=root
-DB_PASSWORD=AXTxLbdYRDhKbCjCcGiuiLkjuWwmuglD
-DB_NAME=railway
-DB_PORT=35810
+Vite
 
-Endpoints de la API
-Método	Ruta	Descripción
-GET	/tasks	Obtiene todas las tareas
-POST	/tasks	Crea una tarea nueva
-PUT	/tasks/:id/complete	Marca una tarea como completada
-DELETE	/tasks/:id	Elimina una tarea
+JavaScript (JSX)
 
-Ejemplo de respuesta JSON:
+CSS
 
-{
-  "id": 1,
-  "title": "Tarea de ejemplo",
-  "completed": false
-}
+ESLint
 
-Ejecución del Backend en Local
+Node.js
 
-Clonar el repositorio:
+Netlify (despliegue)
 
-git clone <URL-de-tu-repo>
-cd backend
+🗂️ Estructura del Proyecto
+despliegue-todo-davidbaquero/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── styles/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── eslint.config.js
+├── netlify.toml
+└── README.md
 
+⚙️ Requisitos Previos
 
-Instalar dependencias:
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
+Node.js (versión 18 o superior)
+
+npm (incluido con Node.js)
+
+Git
+
+▶️ Instalación y Ejecución en Local
+1️⃣ Clonar el repositorio
+git clone https://github.com/tu-usuario/despliegue-todo-davidbaquero.git
+
+2️⃣ Acceder al proyecto
+cd despliegue-todo-davidbaquero
+
+3️⃣ Instalar dependencias
 npm install
 
-
-Crear el archivo .env.local con las variables de entorno indicadas.
-
-Iniciar el servidor:
-
+4️⃣ Ejecutar el proyecto en modo desarrollo
 npm run dev
 
-Despliegue en Railway
 
-El proyecto está configurado para funcionar automáticamente al conectar el repositorio y establecer las variables de entorno en Railway. Una vez configurado esto, Railway gestiona el despliegue.
+El proyecto se ejecutará en el navegador en una URL similar a:
 
-Próximas tareas
+http://localhost:5173
 
-Finalizar la interfaz del frontend
+☁️ Despliegue en Netlify
 
-Establecer comunicación entre frontend y backend
+El proyecto está configurado para ser desplegado en Netlify, utilizando el archivo netlify.toml.
 
-Mejorar estilos mediante CSS o algún framework
+Netlify se encarga de:
 
-Información
+Construcción automática del proyecto
 
-Este proyecto se realizó como ejercicio de práctica para fortalecer habilidades en desarrollo Full Stack y despliegue en la nube.
+Hosting del frontend
+
+Actualización automática al hacer push al repositorio
+
+📌 Estado del Proyecto
+
+Estructura base creada
+
+Componentes organizados
+
+Estilos definidos
+
+Frontend en desarrollo
+
+🔮 Próximas Mejoras
+
+Conectar el frontend con el backend
+
+Finalizar lógica de componentes
+
+Mejorar estilos visuales
+
+Manejo de errores y validaciones
